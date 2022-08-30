@@ -1,0 +1,17 @@
+<header>Angular list of prohibited words</header>
+<div>
+   <form>
+      <div class="list" >Bad words: <span class="red">{{showWordsList()}}</span></div>
+      <div class="input">
+         <input type="text" [style.borderColor]="check ? 'rgb(192, 191, 191)': 'red'" [(ngModel)]="value" [class]="input" placeholder="word here...">
+         <button [class]="btnAdd" (click)="addWord()">Add</button>
+         <button [class]="btnReset">Reset</button>
+      </div>
+      <div>
+         <textarea name="" id="" [class]="tarea" placeholder="text here..." >{{value}}</textarea>
+      </div>
+      <div>
+         <button class="btn-cenzor">Cenzor</button>
+      </div>
+   </form>
+</div>
